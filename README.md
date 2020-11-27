@@ -27,3 +27,33 @@
 #### Observações da Implementação:
 
 Foi adicionado um método para adicionar novas bolinhas na máquina. Este método pode ser chamado em qualquer uma das ações citadas acima, sem interferir em seu funcionamento. Como o método é igual para a maioria dos estados, foi criada um State concreto que define este método, sendo os demais ConcretStates extenderem deste State Padrão, implementando os demais métodos normalmente. Já o estado que possua uma regra de negócio diferente para o método adicionarBolinhas (como o estado Esgotado, que, ao apresentar novas bolinhas, muda para o estado Sem Crédito), basta sobrecarregar este método (como no padrão Strategy).
+
+#### Prints do sistema
+
+Teste onde as ações são efetuadas normalmente, com estoque de 1 bolinha e com o usuário NÂO SENDO um vencedor:
+
+<img src="Prints/Teste Básico.JPG" heigth="500" width="500">
+
+Teste onde as ações são efetuadas normalmente, com estoque de 1 bolinha e com o usuário SENDO um vencedor:
+
+<img src="Prints/Teste Vencedor 1.JPG" heigth="500" width="500">
+
+Teste onde as ações são efetuadas normalmente, com estoque de 2 bolinhas e com o usuário SENDO um vencedor:
+
+<img src="Prints/Teste Vencedor 2.JPG" heigth="500" width="500">
+
+Teste onde as ações são efetuadas com o estoque vazio:
+
+<img src="Prints/Teste Esgotado.JPG" heigth="500" width="500">
+
+Teste onde deseja-se recuperar a moeda e realizar ações sem crédito:
+
+<img src="Prints/Teste Básico 2.JPG" heigth="800" width="500">
+
+Teste onde é adicionado bolinhas com um estoque, demonstrando que o método não afeta o estado nesta situação:
+
+<img src="Prints/Teste Sem Credito.JPG" heigth="600" width="500">
+
+Teste onde é adicionado mais bolinhas que o limite da máquina:
+
+<img src="Prints/Teste Limite Bolinhas.JPG" heigth="600" width="500">
