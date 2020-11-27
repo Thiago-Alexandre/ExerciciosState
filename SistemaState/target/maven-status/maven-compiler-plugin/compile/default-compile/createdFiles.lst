@@ -1,0 +1,9 @@
+model\PadraoState.class
+model\ComCreditoState.class
+model\MaquinaBolinhas.class
+model\VendidoState.class
+main\TesteMaquina.class
+model\State.class
+model\VencedorState.class
+model\SemCreditoState.class
+model\EsgotadoState.class
