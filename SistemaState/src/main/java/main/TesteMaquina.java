@@ -110,6 +110,6 @@ public class TesteMaquina {
         System.out.println("------------------------------");
         System.out.println(maquina);
         System.out.println("------------------------------");
-    
+        
     }
 }

@@ -31,11 +31,6 @@ public class ComCreditoState extends PadraoState{
             maquina.setEstado(new VendidoState(maquina));
         }
     }
-
-    @Override
-    public void entregarBolinha() {
-        System.out.println("É necessário virar a manivela para receber a bolinha!");
-    }
     
     /**
      * Método para realizar a probabilidade de vencedor

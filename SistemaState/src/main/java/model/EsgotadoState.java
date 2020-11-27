@@ -2,30 +2,28 @@ package model;
 
 public class EsgotadoState extends PadraoState{
     
+    private final String mensagem;
+    
     public EsgotadoState(MaquinaBolinhas maquina) {
         super(maquina);
+        mensagem = "Não há bolinhas no estoque!";
     }
     
     @Override
     public void inserirMoeda() {
-        System.out.println("Não há bolinhas para serem entregues!");
-    }
-
-    @Override
-    public void ejetarMoeda() {
-        System.out.println("Não há moedas para ejetar!");
+        System.out.println(mensagem);
     }
 
     @Override
     public void virarManivela() {
-        System.out.println("Insira uma moeda para receber uma bolinha!");
-        System.out.println("Não há bolinhas para serem entregues!");
+        super.virarManivela();
+        System.out.println(mensagem);
     }
 
     @Override
     public void entregarBolinha() {
-        System.out.println("Insira uma moeda para receber uma bolinha!");
-        System.out.println("Não há bolinhas para serem entregues!");
+        super.entregarBolinha();
+        System.out.println(mensagem);
     }
     
     /**

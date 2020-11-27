@@ -19,13 +19,19 @@ public class PadraoState implements State{
     public void inserirMoeda() {}
 
     @Override
-    public void ejetarMoeda() {}
+    public void ejetarMoeda() {
+        System.out.println("Não há moedas para ejetar!");
+    }
 
     @Override
-    public void virarManivela() {}
+    public void virarManivela() {
+        System.out.println("Insira uma moeda primeiro!");
+    }
 
     @Override
-    public void entregarBolinha() {}
+    public void entregarBolinha() {
+        System.out.println("É necessário virar a manivela para receber a bolinha!");
+    }
 
     /**
      * Este método é igual nos estados em que o estoque de bolinhas não está esgotado.
