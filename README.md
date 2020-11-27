@@ -30,7 +30,7 @@ Foi adicionado um método para adicionar novas bolinhas na máquina. Este métod
 
 #### Prints do sistema
 
-Teste onde as ações são efetuadas normalmente, com estoque de 1 bolinha e com o usuário NÂO SENDO um vencedor:
+Teste onde as ações são efetuadas normalmente, com estoque de 1 bolinha e com o usuário NÃO SENDO um vencedor:
 
 <img src="Prints/Teste Básico.JPG" heigth="500" width="500">
 
